@@ -3,5 +3,9 @@
     "bootstrap": "^5.3.0",
     "unsplash-js": "^7.0.18"
   }
+  "scripts": {
+  "build": "webpack"
+}
+
 }
 
