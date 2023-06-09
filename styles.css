@@ -114,6 +114,19 @@ input:focus {
     color: #ffff;
 }
 
+button a {
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+button a:hover {
+    color: var(--primary-color);
+}
+
+.text-project button i:hover {
+    color: var(--primary-color);
+}
+
 .aboutme {
     background-color: var(--primary-color);
     color: var(--background-color);
@@ -149,11 +162,8 @@ input:focus {
     text-decoration: none;
 }
 
-.card-icon .fab {
-    color: var(--background-color);
-}
-
 .footer {
+    font-weight: bold;
     margin: auto;
     background-color: var(--background-color);
     color: var(--primary-color);
