@@ -1,0 +1,200 @@
+/*
+#1d1e25
+#3b414e
+#7e8491
+#c8cad0
+#f5f5f5
+*/
+
+:root {
+    --primary-color: #1d1e25;
+    --secondary-color: #3b414e;
+    --tertiary-color: #7e8491;
+    --quaternary-color: #c8cad0;
+    --background-color: #f5f5f5;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    height: max-content;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+}
+
+.btn-primary {
+    font-weight: bold;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    --bs-btn-color: var(--background-color);
+    --bs-btn-bg: var(--primary-color);
+    --bs-btn-border-color: var(--primary-color);
+    --bs-btn-hover-color: var(--background-color);
+    --bs-btn-hover-bg: var(--secondary-color);
+    --bs-btn-hover-border-color: var(--secondary-color);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    /* Esto todavía es azul, tendrías que encontrar los valores RGB correspondientes para tus colores */
+    --bs-btn-active-color: var(--background-color);
+    --bs-btn-active-bg: var(--tertiary-color);
+    --bs-btn-active-border-color: var(--tertiary-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(var(--quaternary-color), 0.125);
+    /* Este código no funcionará, necesitarías encontrar los valores RGB correspondientes para tus colores */
+    --bs-btn-disabled-color: var(--background-color);
+    --bs-btn-disabled-bg: var(--primary-color);
+    --bs-btn-disabled-border-color: var(--primary-color);
+}
+
+.btn-primary:hover,
+.btn-primary::before {
+    color: var(--primary-color);
+    background-color: var(--background-color);
+}
+
+.btn-outline-primary {
+    font-weight: bold;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-color: var(--primary-color);
+    --bs-btn-color: var(--primary-color);
+    --bs-btn-border-color: var(--primary-color);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--primary-color);
+    --bs-btn-hover-border-color: var(--primary-color);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--primary-color);
+    --bs-btn-active-border-color: var(--primary-color);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-gradient: none;
+}
+
+input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+    color: var(--background-color);
+    background-color: var(--primary-color);
+}
+
+.carousel img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.card {
+    margin-bottom: 4rem;
+}
+
+.card img {
+    height: 20rem;
+    width: auto;
+    object-fit: cover;
+}
+
+.container-search {
+    height: 100vh;
+    color: var(--quaternary-color);
+}
+
+.text-project {
+    font-weight: bold;
+    text-shadow: -1px 0 var(--primary-color), 0 1px var(--primary-color), 1px 0 var(--primary-color), 0 -1px var(--primary-color);
+    width: 50%;
+    margin: 4rem auto auto auto;
+    text-align: center;
+    position: relative;
+    color: #ffff;
+}
+
+.aboutme {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    font-weight: bold;
+    margin: 4rem auto 4rem auto;
+    width: 18rem;
+    height: max-content;
+    box-shadow: 5px 5px 5px var(--primary-color), -5px -5px 5px var(--tertiary-color);
+}
+
+.aboutme img {
+    align-items: center;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-icon {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card-icon a {
+    color: var(--background-color);
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.card-icon .fab {
+    color: var(--background-color);
+}
+
+.footer {
+    margin: auto;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+.footer p {
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .text-project {
+        margin: 1rem;
+        width: 70%;
+    }
+    .input-group {
+        width: 90%;
+        margin: auto;
+    }
+}
+
+
+/* Estilos para pantallas aún más pequeñas */
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+    .carousel,
+    .carousel-inner {
+        margin-bottom: -8rem;
+    }
+    .btn-group {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .text-project {
+        margin: 1rem;
+        width: 90%;
+    }
+    .input-group {
+        width: 90%;
+        margin: auto;
+    }
+}
