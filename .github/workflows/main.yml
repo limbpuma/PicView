@@ -15,7 +15,7 @@ jobs:
 
       - name: Set up environment variables
         env:
-          ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+          ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
         run: |
           echo "ACCESS_KEY=$ACCESS_KEY" >> $GITHUB_ENV
 
