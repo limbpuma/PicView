@@ -114,6 +114,10 @@ input:focus {
     color: #ffff;
 }
 
+.text-project a {
+    color: var(--background-color);
+}
+
 button a {
     color: var(--background-color);
     text-decoration: none;
