@@ -1,15 +1,7 @@
 {
-  "name": "mi-proyecto",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "start npm"
-  },
   "dependencies": {
     "bootstrap": "^5.3.0",
     "unsplash-js": "^7.0.18"
-  },
-  "devDependencies": {
-    
   }
 }
 
