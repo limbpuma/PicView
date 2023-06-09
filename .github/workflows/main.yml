@@ -25,5 +25,4 @@ jobs:
       - name: Build project
         run: npm run build
 
-      # Agrega más pasos si es necesario, como implementación o pruebas
 
