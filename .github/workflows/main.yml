@@ -15,9 +15,9 @@ jobs:
 
       - name: Set up environment variables
         env:
-          ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
+          ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
         run: |
-          echo "ACCESS_KEY=$ACCESS_KEY" >> $GITHUB_ENV
+          echo "UNSPLASH_ACCESS_KEY=$UNSPLASH_ACCESS_KEY" >> $GITHUB_ENV
 
       - name: Install dependencies
         run: npm install
