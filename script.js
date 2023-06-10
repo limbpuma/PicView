@@ -1,7 +1,5 @@
-import dotenv from 'dotenv';
-dotenv.config();
+const accessKey = process.env.UNSPLASH_ACCESS_KEY;
 
-const accessKey = process.env.ACCESS_KEY;
 
 
 
