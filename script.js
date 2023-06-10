@@ -1,5 +1,6 @@
 const accessKey = process.env.ACCESS_KEY;
 
+
 const count = 4;
 
 let currentCategory = '';
