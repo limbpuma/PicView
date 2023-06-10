@@ -1,6 +1,5 @@
-import 'dotenv/config';
-
-const accessKey = process.env.UNSPLASH_ACCESS_KEY;
+const ACCESS_KEY = "oCTa0p5PHzXZOBlxCwAzirdrUVaZ0q2iJBgBJjO7IQo";
+const accessKey = ACCESS_KEY;
 
 const count = 4;
 

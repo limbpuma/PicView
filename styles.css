@@ -166,6 +166,13 @@ button a:hover {
     text-decoration: none;
 }
 
+.change-image:hover {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
 .footer {
     font-weight: bold;
     margin: auto;
