@@ -1,7 +1,4 @@
-import config from './config.js';
-
 const accessKey = config.ACCESS_KEY;
-
 
 const count = 4;
 
