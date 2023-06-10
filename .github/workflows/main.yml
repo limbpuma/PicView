@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - root
+      - main
 
 jobs:
   build:
@@ -19,8 +19,6 @@ jobs:
         run: |
           echo "UNSPLASH_ACCESS_KEY=$UNSPLASH_ACCESS_KEY" >> $GITHUB_ENV
 
-      - name: Install dependencies
-        run: npm install
 
 
 
