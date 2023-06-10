@@ -1,5 +1,4 @@
-const accessKey = process.secrets.UNSPLASH_ACCESS_KEY;
-//
+const accessKey = env.UNSPLASH_ACCESS_KEY;
 
 const count = 4;
 
