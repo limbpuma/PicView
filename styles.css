@@ -138,7 +138,7 @@ button a:hover {
     margin: 4rem auto 4rem auto;
     width: 18rem;
     height: max-content;
-    box-shadow: 5px 5px 5px var(--primary-color), -5px -5px 5px var(--tertiary-color);
+    box-shadow: 5px 5px 5px var(--secondary-color), -5px -5px 5px var(--tertiary-color);
 }
 
 .aboutme img {
