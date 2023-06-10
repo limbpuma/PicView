@@ -1,5 +1,7 @@
-const accessKey = process.env.UNSPLASH_ACCESS_KEY;
-//
+import config from './config.js';
+
+const accessKey = config.ACCESS_KEY;
+
 
 const count = 4;
 
