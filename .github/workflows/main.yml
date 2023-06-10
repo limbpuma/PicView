@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up environment variables
+        env:
+          ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+        run: |
+          echo "UNSPLASH_ACCESS_KEY=$UNSPLASH_ACCESS_KEY" >> $GITHUB_ENV
+
+      - name: Install dependencies
+        run: npm install
